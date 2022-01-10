@@ -20,3 +20,24 @@ The JWT is then stored on the client side mostly localStorage and sent as a head
 
 ![token_diagram](img/token_diagram.png)
 
+## Authentication vulnerabilities
+
+### Credential Stuffing
+
+Credential stuffing is a cyberattack method in which attackers use lists of compromised user credentials to breach into a system. The attack uses bots for automation and scale and is based on the assumption that many users reuse usernames and passwords across multiple services.
+
+### Sql injection
+
+SQL injection is a technique used to exploit user data through web page inputs by injecting SQL commands as statements. Basically, these statements can be used to manipulate the application’s web server by malicious users.
+
+### Cross-Site request forgery
+
+Cross-Site Request Forgery (CSRF) is an attack that forces authenticated users to submit a request to a Web application against which they are currently authenticated.
+
+## Authentication best practices
+
+- block an api after multiple attempt to login
+- validates the input in the frontend and the backend
+- Do not use GET requests for state changing operations
+- use the !(synchronizer token pattern)[https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html#synchronizer-token-pattern]
+- Implement at least one mitigation from !(Defense in Depth Mitigations)[https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html#defense-in-depth-techniques] section
