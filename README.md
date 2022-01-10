@@ -39,5 +39,5 @@ Cross-Site Request Forgery (CSRF) is an attack that forces authenticated users t
 - block an api after multiple attempt to login
 - validates the input in the frontend and the backend
 - Do not use GET requests for state changing operations
-- use the !(synchronizer token pattern)[https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html#synchronizer-token-pattern]
-- Implement at least one mitigation from !(Defense in Depth Mitigations)[https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html#defense-in-depth-techniques] section
+- use the [synchronizer token pattern](https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html#synchronizer-token-pattern)
+- Implement at least one mitigation from [Defense in Depth Mitigations](https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html#defense-in-depth-techniques) section
